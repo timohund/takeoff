@@ -1,0 +1,2 @@
+	# cat=basic; type=boolean; label=Enable profiler (Should not be enabled in production mode)
+enable_profiler=0
