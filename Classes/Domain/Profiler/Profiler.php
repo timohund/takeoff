@@ -56,7 +56,6 @@ class Tx_Takeoff_Domain_Profiler_Profiler {
 	 */
 	public function start() {
 		if(!self::$running) {
-			unregister_tick_function(array(&$this,'handleSample'));
 			$this->timeStart = microtime(true);
 			$this->profileSamples = new Tx_Takeoff_Domain_Profiler_ProfileSampleCollection();
 			$this->sampleCount = 0;
